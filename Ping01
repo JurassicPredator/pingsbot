@@ -1,0 +1,32 @@
+#discord bot made by jurassicpredator
+#JurassicPredator - youtube
+#@JurassicPredator8611 - discord
+
+import discord
+from discord.ext.commands import bot
+from discord.ext import commands
+import random
+import asyncio
+import time
+
+bot = commands.Bot(command_prefix="!")
+
+@bot.event
+async def on_ready():
+    print("Miku love you")
+    print("Name:" +bot.user.name)
+    print("ID: "+ bot.user.id)
+    print("*Sings*")
+
+@bot.command(pass_context=True)
+async def love(ctx):
+    await bot.say("@everyone")
+    time.sleep(0.0005)
+    for i in range (0,100000000000000000000000000000000000000000000000000000000000):
+     await bot.say("@everyone\n")
+     await bot.say("@everyone\n")
+     await bot.say("@everyone Hey,I'm Miku\n")
+     await bot.say("@everyone Lemme send my song with my maxinum voice...\n")
+     await bot.say("@everyone https://www.youtube.com/watch?v=CbQowF0ZfUs\n")
+
+bot.run ("NTMwMzg0MDQ5MDY0MTE2MjM1.Dw-mPQ.UOB1sOSbyKQmIEKPtiIHC0bv4Ew")    
